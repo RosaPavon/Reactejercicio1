@@ -1,8 +1,8 @@
 
 
 function Peliculas(props) {//en props ya tengo el objeto videoclub
-    //1 paso, creamos la constante que la almacena, con 2 parametros, elemento y posición
-    const catalogo= props.videoclub.peliculas.map((pelicula, index)=>{//pelicula index es una función
+    // La constante almacena el código que va saliendo de la función .map que se le hace al array. Elemento y posición son dos argumentos que nos proporciona la función .map y su scope es dentro de la función, no fuera. 
+    const catalogo= props.videoclub.peliculas.map((pelicula, index)=>{//Son los argumentos de una función. Vienen dados por la función .map()
         //ponemos directamente un return, ya que no vamos a hacer nada con esos datos solo mostrarlos
         return (
             <Tarjeta //lo llamamos igual que hemos llamado en app a cabecera o a footer
